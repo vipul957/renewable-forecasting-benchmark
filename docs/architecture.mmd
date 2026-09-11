@@ -1,0 +1,8 @@
+flowchart LR
+    A["Site telemetry + weather"] --> B["Chronological split"]
+    B --> C["Persistence / ML forecast"]
+    C --> D["Horizon predictions"]
+    D --> E["MAE / RMSE / ramp recall"]
+    E --> F["Renewable Forecasting Benchmark
+Evaluation"]
+    F -. feedback .-> C
